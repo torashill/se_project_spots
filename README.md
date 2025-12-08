@@ -1,21 +1,45 @@
-# Project 3: Spots
+# Spots- An image sharing website
+----------------------------------
 
-### Overview  
+Spots is an interactive image-sharing application. Users will be able to add and remove their own photos as well as interact with photos uploaded by other users.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+## Features
+1. Add photos
+2. Remove hotos
+3. Like photos from other users
+4. Make minor adjustments to profile
+
+### Technoligies Used
+1. html
+2. css
+
+#### Project Structure
+SE_PROJECT_SPOTS/
+├── blocks/               # Reusable CSS block modules
+│   ├── card.css
+│   ├── cards.css
+│   ├── content.css
+│   ├── footer.css
+│   ├── header.css
+│   ├── page.css
+│   └── profile.css
+│
+├── images/               # Image assets
+│
+├── pages/                # Page-specific styling
+│   └── index.css
+│
+├── vendor/               # Third-party assets
+│   ├── fonts/
+│   ├── fonts.css
+│   └── normalize.css
+│
+├── .editorconfig         # Editor formatting rules
+├── .gitignore            # Git ignore rules
+├── .prettierignore       # Prettier ignore rules
+├── favicon.ico           # Site favicon
+├── index.html            # Main HTML file
+└── README.md             # Project documentation
+
+

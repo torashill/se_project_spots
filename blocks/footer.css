@@ -1,0 +1,13 @@
+.footer {
+  background-color: #fcf5e5;
+  padding: 60px 0;
+}
+
+.footer__content {
+  margin: 0 auto;
+  text-align: center;
+  color: #212121;
+  background-color: #FCF5E5;
+  opacity: 0.7;
+}
+
