@@ -43,3 +43,4 @@ SE_PROJECT_SPOTS/
 └── README.md             # Project documentation
 
 
+https://torashill.github.io/se_project_spots/

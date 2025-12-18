@@ -1,13 +1,13 @@
 .footer {
-  background-color: #fcf5e5;
+  background-color: #ffffff;
   padding: 60px 0;
 }
 
 .footer__content {
+  font-size: 16px;
+  font-weight: 400;
   margin: 0 auto;
   text-align: center;
-  color: #212121;
-  background-color: #FCF5E5;
-  opacity: 0.7;
+  color: #212121B2;
 }
 

@@ -18,7 +18,7 @@
     padding-bottom: 20px;
   }
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 90vw);
+    grid-template-columns: repeat(auto-fit, 288px);
     gap: 20px;
   }
 }
