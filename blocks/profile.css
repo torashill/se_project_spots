@@ -25,7 +25,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
-  max-width: 235px;
+  max-width: 420px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -117,6 +117,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 235px;
   }
 
   .profile__description {

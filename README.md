@@ -44,3 +44,5 @@ SE_PROJECT_SPOTS/
 
 
 https://torashill.github.io/se_project_spots/
+
+https://www.loom.com/share/0d05c8f287e449abb1abdb0ece62d6bb
