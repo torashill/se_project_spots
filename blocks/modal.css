@@ -1,6 +1,4 @@
-
 .modal {
-  visibility: hidden;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -11,10 +9,14 @@
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -25,6 +27,7 @@
   padding: 32px 50px;
   position: relative;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
@@ -69,6 +72,7 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
+  box-sizing: border-box;
 }
 
 .modal__submit-btn {
@@ -84,4 +88,29 @@
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+@media (max-width: 768px) {
+  .modal__container {
+    padding: 12px;
+  }
+
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__label {
+    width: 100%;
+  }
+
+  .modal__submit-btn {
+    width: 100%;
+    max-width: none;
+    
+  }
 }
