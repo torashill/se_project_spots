@@ -16,10 +16,6 @@
     opacity 0.5s ease-in;
 }
 
-.modal__close_type_preview {
-   padding: 0 16px;
-}
-
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
@@ -41,7 +37,7 @@
   position: relative;
 }
 
-.modal__close:hover {
+.modal__close-btn:hover {
   opacity: 1;
 }
 
@@ -106,7 +102,7 @@
   border-radius: 8px;
 }
 
-.modal__close {
+.modal__close-btn {
   width: 40px;
   height: 40px;
   background: transparent url("../images/Group\ 27.svg") center no-repeat;
@@ -177,9 +173,5 @@
     /*Placed below the 768px media query to avoid being overwritten */
     top: -48px;
     right: 0;
-  }
-
-  .modal__image {
-    max-width: unset;
   }
 }

@@ -13,7 +13,7 @@
   gap: 40px 20px;
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 627px) {
   .cards {
     padding-bottom: 20px;
   }
