@@ -85,8 +85,8 @@
   display: block;
   color: #FF0000B2;
   margin-top: 8px;
-  opacity: 70%;
-  font: poppins, Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 

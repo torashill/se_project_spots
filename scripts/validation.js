@@ -46,7 +46,7 @@ const toggleButtonState = (inputList, buttonEl) => {
   }
 };
 
-const disableButton = (buttonEl) => {
+const disableButton = (buttonEl, config) => {
 buttonEl.disabled = true;
 };
 
@@ -75,7 +75,7 @@ const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
 const enableValidation = (config) => {
 const formList = (document.querySelectorAll(config.formSelector));
 formList.forEach((formEl) => {
-  setEventListeners(formEl);
+  setEventListeners(formEl, config);
 });
 };
 

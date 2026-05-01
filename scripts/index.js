@@ -40,7 +40,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
-  ".modal__close-btn, modal__close-btn_type_preview",
+  ".modal__close-btn, .modal__close-btn_type_preview",
 );
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
@@ -115,7 +115,7 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
 const newPostFormElement = newPostModal.querySelector(".modal__form");
 const newPostNameInput = newPostModal.querySelector("#card-name-input");
-const newPostLinkInput = newPostModal.querySelector("#card-image-input");
+const newPostLinkInput = newPostModal.querySelector("#card-link-input");
 
 function handleCardSubmit(evt) {
   evt.preventDefault();
@@ -128,8 +128,8 @@ function handleCardSubmit(evt) {
   });
   cardList.prepend(cardElement);
   evt.target.reset();
-  disableButton( );
-   loseModal(newPostModal);
+  disableButton(submitBtn);
+   closeModal(newPostModal);
 }
 
 newPostFormElement.addEventListener("submit", handleCardSubmit);
