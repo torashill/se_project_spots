@@ -1,3 +1,5 @@
+//TODO: pass settings object to the validations functions that are called in this file.
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -115,7 +117,7 @@ const newPostFormElement = newPostModal.querySelector(".modal__form");
 const newPostNameInput = newPostModal.querySelector("#card-name-input");
 const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 
-function handleAddCardSubmit(evt) {
+function handleCardSubmit(evt) {
   evt.preventDefault();
 
   console.log(newPostNameInput.value);
@@ -126,10 +128,11 @@ function handleAddCardSubmit(evt) {
   });
   cardList.prepend(cardElement);
   evt.target.reset();
-  closeModal(newPostModal);
+  disableButton( );
+   loseModal(newPostModal);
 }
 
-newPostFormElement.addEventListener("submit", handleAddCardSubmit);
+newPostFormElement.addEventListener("submit", handleCardSubmit);
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
 });
