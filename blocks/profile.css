@@ -78,6 +78,7 @@
   align-items: center;
   border-radius: 8px;
   transition: opacity 0.2s ease-in-out;
+  border: none;
 }
 
 .profile__add-btn:hover {
