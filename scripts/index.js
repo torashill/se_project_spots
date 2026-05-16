@@ -95,6 +95,32 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+// ✅ Fix 1 & 2: Get all modals and add overlay + close button click listeners
+const modals = document.querySelectorAll(".modal");
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    // 2b & 2c: Close if clicking the modal overlay itself or the close button
+    if (
+      evt.target === modal ||
+      evt.target.classList.contains("modal__close-btn")
+    ) {
+      closeModal(modal);
+    }
+  });
+});
+
+// ✅ Fix 3: Close open modal when Escape key is pressed
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    // 3b: Find the currently open modal and close it
+    const openModal = document.querySelector(".modal_is-opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+});
+
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
@@ -116,20 +142,19 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostFormElement = newPostModal.querySelector(".modal__form");
 const newPostNameInput = newPostModal.querySelector("#card-name-input");
 const newPostLinkInput = newPostModal.querySelector("#card-link-input");
+const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 
 function handleCardSubmit(evt) {
   evt.preventDefault();
 
-  console.log(newPostNameInput.value);
-  console.log(newPostLinkInput.value);
   const cardElement = getCardElement({
     name: newPostNameInput.value,
     link: newPostLinkInput.value,
   });
   cardList.prepend(cardElement);
   evt.target.reset();
-  disableButton(submitBtn);
-   closeModal(newPostModal);
+  disableButton(newPostSubmitBtn);
+  closeModal(newPostModal);
 }
 
 newPostFormElement.addEventListener("submit", handleCardSubmit);
