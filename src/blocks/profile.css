@@ -7,8 +7,39 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
-.profile__avatar {
+.profile__avatar-container {
+  position: relative;
   margin-right: 20px;
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  color: #ffffff;
+  background-color: #00000080;
+
+  visibility: hidden;
+  /* TODO - finish mobile avatar button styles */
+}
+
+.profile__pencil-icon {
+  margin-right: 8px;
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+}
+
+.profile__avatar-btn::after {
+  content: "Edit Avatar";
+}
+
+.profile__avatar {
   height: 190px;
   width: 190px;
   border-radius: 8px;
@@ -104,6 +135,13 @@
     padding-top: 20px;
     width: 100%;
   }
+
+  .profile__avatar-btn {
+    visibility: visible;
+  }
+
+  /* TODO - set content of ::after element to "" */
+  /* TODO - finish mobile avatar button styles */
 
   .profile__avatar {
     margin: 0 0 12px;
